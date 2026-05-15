@@ -9,12 +9,12 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CoRide",
+  title: "JeepniGo - Smart Jeepney Transit for Davao City",
   description:
-    "Find real-time transport availability, check seat counts, and reserve your ride. Modernizing commute with digital convenience.",
+    "Find real-time jeepney availability, check seat counts, and reserve your ride in Davao City. Modernizing traditional transport with digital convenience.",
   generator: "v0.app",
   keywords: [
-    "CoRide",
+    "jeepney",
     "Davao City",
     "public transport",
     "smart mobility",
@@ -23,59 +23,59 @@ export const metadata: Metadata = {
     "real-time tracking",
     "seat availability",
   ],
-  authors: [{ name: "CoRide Team" }],
-  applicationName: "CoRide",
+  authors: [{ name: "JeepniGo Team" }],
+  applicationName: "JeepniGo",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "CoRide",
+    title: "JeepniGo",
   },
   formatDetection: {
     telephone: false,
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "CoRide - Smart Transit",
-    description: "Real-time transport tracking and seat availability for smart commuters",
-    images: ["/coride-logo.png"],
+    title: "JeepniGo - Smart Jeepney Transit",
+    description: "Real-time jeepney tracking and seat availability for Filipino commuters",
+    images: ["/jeepnigo-logo.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CoRide - Smart Transit",
-    description: "Real-time transport tracking and seat availability",
-    images: ["/coride-logo.png"],
+    title: "JeepniGo - Smart Jeepney Transit",
+    description: "Real-time jeepney tracking and seat availability",
+    images: ["/jeepnigo-logo.png"],
   },
   icons: {
     icon: [
       {
-        url: "/coride-logo.png",
+        url: "/jeepnigo-logo.png",
         sizes: "32x32",
         type: "image/png",
       },
       {
-        url: "/coride-logo.png",
+        url: "/jeepnigo-logo.png",
         sizes: "16x16",
         type: "image/png",
       },
       {
-        url: "/coride-logo.png",
+        url: "/jeepnigo-logo.png",
         sizes: "any",
         type: "image/png",
       },
     ],
     apple: [
       {
-        url: "/coride-logo.png",
+        url: "/jeepnigo-logo.png",
         sizes: "180x180",
         type: "image/png",
       },
     ],
-    shortcut: "/coride-logo.png",
+    shortcut: "/jeepnigo-logo.png",
     other: [
       {
         rel: "icon",
-        url: "/coride-logo.png",
+        url: "/jeepnigo-logo.png",
       },
     ],
   },
