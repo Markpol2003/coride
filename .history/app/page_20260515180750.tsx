@@ -3,21 +3,14 @@
 import { useState } from "react";
 import Link from "next/link";
 import { JeepniGoProvider, useJeepniGo } from "@/lib/jeepnigo-context";
-import CoRideHeader from "@/components/coride/header";
-import HomeScreen from "@/components/coride/home-screen";
-import RoutesScreen from "@/components/coride/routes-screen";
-import WalletScreen from "@/components/coride/wallet-screen";
-import ImpactDashboard from "@/components/coride/impact-dashboard";
-import InsightsScreen from "@/components/coride/insights-screen";
-
-const Header = CoRideHeader;
-const CommuterView = HomeScreen;
-const DriverView = HomeScreen;
-const RoutesView = RoutesScreen;
-const HelpView = WalletScreen;
-const AboutView = ImpactDashboard;
-const HistoryView = WalletScreen;
-const FavoritesView = InsightsScreen;
+import { Header } from "@/components/coride/header";
+import { HomeScreen as CommuterView } from "@/components/coride/home-screen";
+import { HomeScreen as DriverView } from "@/components/coride/home-screen";
+import { RoutesScreen as RoutesView } from "@/components/coride/routes-screen";
+import { WalletScreen as HelpView } from "@/components/coride/wallet-screen";
+import { ImpactDashboard as AboutView } from "@/components/coride/impact-dashboard";
+import { WalletScreen as HistoryView } from "@/components/coride/wallet-screen";
+import { InsightsScreen as FavoritesView } from "@/components/coride/insights-screen";
 
 function AppContent() {
   const { userMode } = useJeepniGo();

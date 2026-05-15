@@ -90,40 +90,35 @@
 
 
 
-* {
-  border-color: var(--border);
-  outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
-}
-
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  -webkit-font-smoothing: antialiased;
-  background-image: radial-gradient(circle at 20% 0%, oklch(0.4 0.2 250 / 0.08), transparent 50%);
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: radial-gradient(circle at 20% 0%, oklch(0.4 0.2 250 / 0.08), transparent 50%);
+  }
 }
 
 /* Mobile Layout Utilities */
-.mobile-padding {
-  padding: 1rem;
-}
-
-.mobile-padding-compact {
-  padding: 0.75rem 1rem;
-}
-
-.mobile-padding-x {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.mobile-padding-y {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.mobile-section-header {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@layer components {
+  .mobile-padding {
+    @apply px-4 py-4;
+  }
+  
+  .mobile-padding-compact {
+    @apply px-4 py-3;
+  }
+  
+  .mobile-padding-x {
+    @apply px-4;
+  }
+  
+  .mobile-padding-y {
+    @apply py-4;
+  }
+  
+  .mobile-section-header {
+    @apply px-4 py-4 flex items-center justify-between;
+  }
 }
