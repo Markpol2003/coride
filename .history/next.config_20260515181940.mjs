@@ -9,14 +9,8 @@ const nextConfig = {
   // Vercel deployment optimizations
   compress: true,
   productionBrowserSourceMaps: false,
+  swcMinify: true,
   reactStrictMode: false,
-  // Fix for multiple lockfiles warning
-  turbopack: {
-    root: '.',
-  },
-  output: {
-    fileTracingRoot: '.',
-  },
 }
 
 export default nextConfig

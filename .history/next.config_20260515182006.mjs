@@ -10,13 +10,6 @@ const nextConfig = {
   compress: true,
   productionBrowserSourceMaps: false,
   reactStrictMode: false,
-  // Fix for multiple lockfiles warning
-  turbopack: {
-    root: '.',
-  },
-  output: {
-    fileTracingRoot: '.',
-  },
 }
 
 export default nextConfig
